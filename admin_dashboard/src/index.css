@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Reset / base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0d1117; /* dark background */
+  color: #e6edf3; /* light text */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.navbar h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #58a6ff;
+}
+
+.navbar .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar button {
+  background: #d73a49;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background: #f85149;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  min-height: calc(100vh - 48px); /* full height minus navbar */
+  background-color: #161b22;
+  border-right: 1px solid #30363d;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 16px 0;
+}
+
+.sidebar a {
+  color: #c9d1d9;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.sidebar a:hover {
+  color: #58a6ff;
+}
+
+/* Layout grid */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.page-content {
+  flex: 1;
+  padding: 24px;
+  background-color: #0d1117;
+  overflow-y: auto;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+/* Cards / Panels */
+.card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 20px;
+}

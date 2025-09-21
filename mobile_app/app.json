@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "NSC Prototype",
+    "slug": "nsc-prototype",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "nscprototype",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#002868" 
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#002868"
+      },
+      "package": "com.nsc.prototype"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nsc.prototype"
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": []
+  }
+}
